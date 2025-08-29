@@ -1,0 +1,22 @@
+local numeros = {}
+
+print("Quantos números você quer digitar?")
+n = io.read("*n")
+
+print("Digite os números: ")
+
+for i = 1, n do
+    numeros[i] = io.read("*n")
+end
+
+function maiorValor(tabela)
+    local maior = tabela[1]
+    for i = 2, #tabela do
+        if tabela[i] > maior then
+            maior = tabela[i]
+        end
+    end
+    return maior
+end
+
+print("O maior valor da tabela é: " .. maiorValor(numeros))
