@@ -38,6 +38,14 @@ deus_maior(deus) :-
     length(ListaDom, N),
     N >= 2.
 
+irmaos_germanos(A, B) :-
+    filho(A, Pai),
+    filho(B, Pai),
+    filho(A, Mae),
+    filho(B, Mae),
+    Pai \= Mae,
+    A \= B.
+
 ancestral(A, D) :-
     pai(A, D).        
 
