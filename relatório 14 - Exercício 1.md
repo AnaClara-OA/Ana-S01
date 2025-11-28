@@ -12,6 +12,6 @@ dominio(poseidon, mar).
 dominio(hades, submundo).
 
 divindade_olimpica(deus) :-
-filho(deus, crono),
+filho(deus, cronos),
 dominio(deus, Dom),
 (Dom = ceu ; Dom = mar ; Dom = submundo).
